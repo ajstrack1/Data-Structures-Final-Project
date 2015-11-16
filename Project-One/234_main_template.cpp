@@ -6,7 +6,7 @@ names will need to be changed for 2-3-4 tree.					**********/
 #include <iostream>
 using namespace std;
 
-#include "234tree.h"
+#include "234_tree_template.h"
 
 int main()
 {
@@ -17,7 +17,7 @@ int main()
 
 
   //Ask user for items to insert
-  //Inser items
+  //Insert items
   //Display tree
   cout << "\nNow insert a bunch of integers into the 234 tree."
     "\nTry items not in the 234 tree and some that are in it:\n";
