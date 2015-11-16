@@ -51,7 +51,7 @@ private:
 
     _rbTreeNode<T>* treeSuccessor(  _rbTreeNode<T> * );
 
-    _rbTreeNode<T> *nil;			//空结点
+    _rbTreeNode<T> *nil;
     _rbTreeNode<T> *root;
 
 };
