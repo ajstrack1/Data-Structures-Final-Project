@@ -9,13 +9,26 @@
  *
  */
 
-#include <iostream>
+#include<iostream>
+#include<ctime>
 #include "red_black_template.h"
 using namespace std;
 
+const int N = 15;
 
-
-int main() {
-    cout << "Hello, World!" << endl;
+int main(){
+    rbtree<int> test;
+    srand( (unsigned)time(NULL) );
+    srand( rand() );
+    srand( rand() );
+    for( int i = 0; i != N; ++i ){
+        test.insert( rand() % 29);
+    }
+    int a;
+    test.display();
+    while( cin >> a ){
+        test.erase( a );
+        test.display();
+    }
     return 0;
 }
