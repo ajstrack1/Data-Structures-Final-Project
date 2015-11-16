@@ -18,12 +18,17 @@ const int N = 15;
 
 int main(){
     rbtree<int> test;
+    int answer;
     srand( (unsigned)time(NULL) );
     srand( rand() );
     srand( rand() );
-    for( int i = 0; i != N; ++i ){
-        test.insert( rand() % 29);
+    while(true) {
+        cin >> answer;
+        if (answer == -999)
+            break;
+        test.insert(answer);
     }
+
     int a;
     test.display();
     while( cin >> a ){
